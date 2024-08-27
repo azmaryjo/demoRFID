@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="CLOUDWATCH" class="com.example.demoRFID.Config.CloudWatchAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="CLOUDWATCH" />
+    </root>
+</configuration>
+
